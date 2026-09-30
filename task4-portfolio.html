@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 — Portfolio Page (Flexbox + Grid)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">FG</span>
+        Flex&nbsp;&amp;&nbsp;Grid
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="task1-cards.html">Task 1 · Cards</a></li>
+        <li><a href="task2-layout.html">Task 2 · Grid Layout</a></li>
+        <li><a href="task3-gallery.html">Task 3 · Gallery</a></li>
+        <li><a href="task4-portfolio.html" class="active">Task 4 · Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="portfolio-hero">
+      <h1>Yersain — Front-End Developer</h1>
+      <p>Task 4 combines both layout systems: Flexbox for the navigation bar and the
+         inside of each project card, CSS Grid for the projects / sidebar split below.</p>
+    </section>
+
+    <div class="portfolio-main">
+      <section class="projects">
+        <article class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>A responsive dashboard that shows live forecasts with charts and a
+             location search.</p>
+          <a class="btn" href="#">View project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Recipe Finder</h3>
+          <p>Search thousands of recipes by ingredient.</p>
+          <a class="btn" href="#">View project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Task Tracker</h3>
+          <p>A kanban-style to-do application with drag and drop, labels, and local
+             storage persistence.</p>
+          <a class="btn" href="#">View project</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Landing Page Kit</h3>
+          <p>A set of reusable landing page sections built with modern CSS.</p>
+          <a class="btn" href="#">View project</a>
+        </article>
+      </section>
+
+      <aside class="portfolio-aside">
+        <h2>About</h2>
+        <ul>
+          <li><strong>Location:</strong> Almaty, KZ</li>
+          <li><strong>Email:</strong> hello@example.com</li>
+          <li><strong>Focus:</strong> HTML · CSS · JS</li>
+        </ul>
+        <h2 style="margin-top:1.25rem;">Skills</h2>
+        <div class="skill-tags">
+          <span>Flexbox</span>
+          <span>CSS Grid</span>
+          <span>Responsive</span>
+          <span>Accessibility</span>
+          <span>Git</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Flexbox &amp; Grid Assignment · 2026 · Built with Flexbox and CSS Grid</p>
+  </footer>
+
+</body>
+</html>

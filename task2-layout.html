@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 — Page Layout with Grid Areas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">FG</span>
+        Flex&nbsp;&amp;&nbsp;Grid
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="task1-cards.html">Task 1 · Cards</a></li>
+        <li><a href="task2-layout.html" class="active">Task 2 · Grid Layout</a></li>
+        <li><a href="task3-gallery.html">Task 3 · Gallery</a></li>
+        <li><a href="task4-portfolio.html">Task 4 · Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Task 2 — Page Layout with Grid Areas</h1>
+    <p class="page-subtitle">
+      The demo below is a grid container using <code>grid-template-areas</code>:
+      the header spans the top, the sidebar sits on the left, the main content on the
+      right, and the footer spans the bottom. On narrow screens the areas stack.
+    </p>
+
+    <div class="layout-demo">
+      <header class="demo-header">
+        <h2>Demo Header</h2>
+        <p>grid-area: header — spans both columns across the top.</p>
+      </header>
+
+      <aside class="demo-sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </aside>
+
+      <section class="demo-main">
+        <h2>Main Content</h2>
+        <p>This area occupies <code>grid-area: main</code>, to the right of the sidebar.
+           The middle row uses <code>1fr</code>, so it grows to fill available height and
+           both the sidebar and this section stretch together.</p>
+        <p>Columns are defined as <code>220px 1fr</code>: a fixed sidebar and a fluid
+           content column. Rows are <code>auto 1fr auto</code>, so the header and footer
+           take only the space they need.</p>
+      </section>
+
+      <footer class="demo-footer">
+        <p>Demo Footer — grid-area: footer, spanning the full width.</p>
+      </footer>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Flexbox &amp; Grid Assignment · 2026</p>
+  </footer>
+
+</body>
+</html>

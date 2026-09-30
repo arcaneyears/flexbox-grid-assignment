@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 — Card Row (Flexbox)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">FG</span>
+        Flex&nbsp;&amp;&nbsp;Grid
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="task1-cards.html" class="active">Task 1 · Cards</a></li>
+        <li><a href="task2-layout.html">Task 2 · Grid Layout</a></li>
+        <li><a href="task3-gallery.html">Task 3 · Gallery</a></li>
+        <li><a href="task4-portfolio.html">Task 4 · Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Task 1 — Card Row</h1>
+    <p class="page-subtitle">
+      The container below is a flex container: the three cards sit in a row with equal
+      heights (<code>align-items: stretch</code>), consistent gaps, and a lift-and-shadow
+      hover effect. Card content lengths differ on purpose — the buttons still line up.
+    </p>
+
+    <div class="card-row">
+      <article class="card">
+        <img src="img/photo1.svg" alt="Mountain landscape illustration">
+        <div class="card-body">
+          <h2>Mountain Trails</h2>
+          <p>Explore alpine routes with panoramic views. A short description to show that
+             cards keep equal height even with different amounts of text.</p>
+          <a class="btn" href="#">Read more</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/photo2.svg" alt="Sunset over hills illustration">
+        <div class="card-body">
+          <h2>Golden Sunsets</h2>
+          <p>Chase the last light of the day.</p>
+          <a class="btn" href="#">Read more</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/photo3.svg" alt="Forest illustration">
+        <div class="card-body">
+          <h2>Deep Forests</h2>
+          <p>Wander beneath ancient canopies where the air is cool and the trails are quiet.
+             Longer text here demonstrates that the flexible body area absorbs the difference
+             while buttons stay aligned at the bottom.</p>
+          <a class="btn" href="#">Read more</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Flexbox &amp; Grid Assignment · 2026</p>
+  </footer>
+
+</body>
+</html>
